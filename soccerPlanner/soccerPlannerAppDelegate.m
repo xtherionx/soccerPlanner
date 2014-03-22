@@ -7,7 +7,7 @@
 //
 
 #import "soccerPlannerAppDelegate.h"
-
+#import "SWRevealViewController.h"
 @implementation soccerPlannerAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -15,6 +15,10 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"mainStoryboard" bundle:nil];
+    SWRevealViewController *vc = [[SWRevealViewController alloc]initWithRearViewController:    [storyboard instantiateViewControllerWithIdentifier:@"menu"] frontViewController:    [storyboard instantiateViewControllerWithIdentifier:@"navController"]];
+    self.window.rootViewController = vc;
+    
     [self.window makeKeyAndVisible];
     return YES;
 }

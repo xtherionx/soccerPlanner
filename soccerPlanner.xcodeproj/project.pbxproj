@@ -19,6 +19,13 @@
 		49D2BB9518DE380E008FFB9B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49D2BB7D18DE380D008FFB9B /* UIKit.framework */; };
 		49D2BB9D18DE380E008FFB9B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 49D2BB9B18DE380E008FFB9B /* InfoPlist.strings */; };
 		49D2BB9F18DE380E008FFB9B /* soccerPlannerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D2BB9E18DE380E008FFB9B /* soccerPlannerTests.m */; };
+		49D2BBAB18DE3878008FFB9B /* mainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49D2BBAA18DE3878008FFB9B /* mainStoryboard.storyboard */; };
+		49D2BBAF18DE38A3008FFB9B /* fieldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D2BBAE18DE38A3008FFB9B /* fieldViewController.m */; };
+		49D2BBB218DE39D5008FFB9B /* backgroundField.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 49D2BBB118DE39D5008FFB9B /* backgroundField.jpg */; };
+		49D2BBB518DE3A0B008FFB9B /* soccerPlannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D2BBB418DE3A0B008FFB9B /* soccerPlannerViewController.m */; };
+		49D2BBBA18DE3C92008FFB9B /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D2BBB918DE3C92008FFB9B /* SWRevealViewController.m */; };
+		49D2BBBD18DE3D7D008FFB9B /* menuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D2BBBC18DE3D7D008FFB9B /* menuViewController.m */; };
+		49D2BBC018DE3D8D008FFB9B /* startViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D2BBBF18DE3D8D008FFB9B /* startViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +55,18 @@
 		49D2BB9A18DE380E008FFB9B /* soccerPlannerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "soccerPlannerTests-Info.plist"; sourceTree = "<group>"; };
 		49D2BB9C18DE380E008FFB9B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		49D2BB9E18DE380E008FFB9B /* soccerPlannerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = soccerPlannerTests.m; sourceTree = "<group>"; };
+		49D2BBAA18DE3878008FFB9B /* mainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = mainStoryboard.storyboard; sourceTree = "<group>"; };
+		49D2BBAD18DE38A3008FFB9B /* fieldViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fieldViewController.h; sourceTree = "<group>"; };
+		49D2BBAE18DE38A3008FFB9B /* fieldViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = fieldViewController.m; sourceTree = "<group>"; };
+		49D2BBB118DE39D5008FFB9B /* backgroundField.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = backgroundField.jpg; sourceTree = "<group>"; };
+		49D2BBB318DE3A0B008FFB9B /* soccerPlannerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = soccerPlannerViewController.h; sourceTree = "<group>"; };
+		49D2BBB418DE3A0B008FFB9B /* soccerPlannerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = soccerPlannerViewController.m; sourceTree = "<group>"; };
+		49D2BBB818DE3C92008FFB9B /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		49D2BBB918DE3C92008FFB9B /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		49D2BBBB18DE3D7D008FFB9B /* menuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = menuViewController.h; sourceTree = "<group>"; };
+		49D2BBBC18DE3D7D008FFB9B /* menuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = menuViewController.m; sourceTree = "<group>"; };
+		49D2BBBE18DE3D8D008FFB9B /* startViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = startViewController.h; sourceTree = "<group>"; };
+		49D2BBBF18DE3D8D008FFB9B /* startViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = startViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +126,11 @@
 		49D2BB7F18DE380D008FFB9B /* soccerPlanner */ = {
 			isa = PBXGroup;
 			children = (
+				49D2BBB618DE3C81008FFB9B /* Libraries */,
+				49D2BBB018DE39BD008FFB9B /* images */,
+				49D2BBAC18DE3880008FFB9B /* soccerPlannerClasses */,
+				49D2BBA918DE383C008FFB9B /* viewControllers */,
+				49D2BBA818DE3831008FFB9B /* storyboard */,
 				49D2BB8818DE380D008FFB9B /* soccerPlannerAppDelegate.h */,
 				49D2BB8918DE380D008FFB9B /* soccerPlannerAppDelegate.m */,
 				49D2BB8B18DE380D008FFB9B /* Images.xcassets */,
@@ -142,6 +166,61 @@
 				49D2BB9B18DE380E008FFB9B /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		49D2BBA818DE3831008FFB9B /* storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				49D2BBAA18DE3878008FFB9B /* mainStoryboard.storyboard */,
+			);
+			name = storyboard;
+			sourceTree = "<group>";
+		};
+		49D2BBA918DE383C008FFB9B /* viewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				49D2BBAD18DE38A3008FFB9B /* fieldViewController.h */,
+				49D2BBAE18DE38A3008FFB9B /* fieldViewController.m */,
+				49D2BBBB18DE3D7D008FFB9B /* menuViewController.h */,
+				49D2BBBC18DE3D7D008FFB9B /* menuViewController.m */,
+				49D2BBBE18DE3D8D008FFB9B /* startViewController.h */,
+				49D2BBBF18DE3D8D008FFB9B /* startViewController.m */,
+			);
+			name = viewControllers;
+			sourceTree = "<group>";
+		};
+		49D2BBAC18DE3880008FFB9B /* soccerPlannerClasses */ = {
+			isa = PBXGroup;
+			children = (
+				49D2BBB318DE3A0B008FFB9B /* soccerPlannerViewController.h */,
+				49D2BBB418DE3A0B008FFB9B /* soccerPlannerViewController.m */,
+			);
+			name = soccerPlannerClasses;
+			sourceTree = "<group>";
+		};
+		49D2BBB018DE39BD008FFB9B /* images */ = {
+			isa = PBXGroup;
+			children = (
+				49D2BBB118DE39D5008FFB9B /* backgroundField.jpg */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+		49D2BBB618DE3C81008FFB9B /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				49D2BBB718DE3C92008FFB9B /* SWRevealViewController */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		49D2BBB718DE3C92008FFB9B /* SWRevealViewController */ = {
+			isa = PBXGroup;
+			children = (
+				49D2BBB818DE3C92008FFB9B /* SWRevealViewController.h */,
+				49D2BBB918DE3C92008FFB9B /* SWRevealViewController.m */,
+			);
+			path = SWRevealViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,6 +271,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = xtherionx;
 				TargetAttributes = {
+					49D2BB7518DE380D008FFB9B = {
+						DevelopmentTeam = 69D49TZMHS;
+					};
 					49D2BB9018DE380E008FFB9B = {
 						TestTargetID = 49D2BB7518DE380D008FFB9B;
 					};
@@ -222,6 +304,8 @@
 			files = (
 				49D2BB8418DE380D008FFB9B /* InfoPlist.strings in Resources */,
 				49D2BB8C18DE380D008FFB9B /* Images.xcassets in Resources */,
+				49D2BBB218DE39D5008FFB9B /* backgroundField.jpg in Resources */,
+				49D2BBAB18DE3878008FFB9B /* mainStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,7 +325,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				49D2BB8A18DE380D008FFB9B /* soccerPlannerAppDelegate.m in Sources */,
+				49D2BBBD18DE3D7D008FFB9B /* menuViewController.m in Sources */,
 				49D2BB8618DE380D008FFB9B /* main.m in Sources */,
+				49D2BBBA18DE3C92008FFB9B /* SWRevealViewController.m in Sources */,
+				49D2BBC018DE3D8D008FFB9B /* startViewController.m in Sources */,
+				49D2BBB518DE3A0B008FFB9B /* soccerPlannerViewController.m in Sources */,
+				49D2BBAF18DE38A3008FFB9B /* fieldViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,9 +449,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "soccerPlanner/soccerPlanner-Prefix.pch";
 				INFOPLIST_FILE = "soccerPlanner/soccerPlanner-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -373,9 +464,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "soccerPlanner/soccerPlanner-Prefix.pch";
 				INFOPLIST_FILE = "soccerPlanner/soccerPlanner-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
