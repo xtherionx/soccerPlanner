@@ -25,7 +25,9 @@
 		49D2BBB518DE3A0B008FFB9B /* soccerPlannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D2BBB418DE3A0B008FFB9B /* soccerPlannerViewController.m */; };
 		49D2BBBA18DE3C92008FFB9B /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D2BBB918DE3C92008FFB9B /* SWRevealViewController.m */; };
 		49D2BBBD18DE3D7D008FFB9B /* menuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D2BBBC18DE3D7D008FFB9B /* menuViewController.m */; };
-		49D2BBC018DE3D8D008FFB9B /* startViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D2BBBF18DE3D8D008FFB9B /* startViewController.m */; };
+		49D41E1518DF47F4004E8984 /* soccerPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D41E1418DF47F4004E8984 /* soccerPlayer.m */; };
+		49D41E1C18DF48D4004E8984 /* soccerPlanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D41E1B18DF48D4004E8984 /* soccerPlanner.m */; };
+		49D41E1F18DF49CF004E8984 /* homePlayer.png in Resources */ = {isa = PBXBuildFile; fileRef = 49D41E1E18DF49CF004E8984 /* homePlayer.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,8 +67,12 @@
 		49D2BBB918DE3C92008FFB9B /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		49D2BBBB18DE3D7D008FFB9B /* menuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = menuViewController.h; sourceTree = "<group>"; };
 		49D2BBBC18DE3D7D008FFB9B /* menuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = menuViewController.m; sourceTree = "<group>"; };
-		49D2BBBE18DE3D8D008FFB9B /* startViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = startViewController.h; sourceTree = "<group>"; };
-		49D2BBBF18DE3D8D008FFB9B /* startViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = startViewController.m; sourceTree = "<group>"; };
+		49D41E1318DF47F4004E8984 /* soccerPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = soccerPlayer.h; sourceTree = "<group>"; };
+		49D41E1418DF47F4004E8984 /* soccerPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = soccerPlayer.m; sourceTree = "<group>"; };
+		49D41E1718DF48C5004E8984 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		49D41E1A18DF48D4004E8984 /* soccerPlanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = soccerPlanner.h; sourceTree = "<group>"; };
+		49D41E1B18DF48D4004E8984 /* soccerPlanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = soccerPlanner.m; sourceTree = "<group>"; };
+		49D41E1E18DF49CF004E8984 /* homePlayer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = homePlayer.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +132,8 @@
 		49D2BB7F18DE380D008FFB9B /* soccerPlanner */ = {
 			isa = PBXGroup;
 			children = (
+				49D41E1D18DF49B9004E8984 /* Images */,
+				49D41E1618DF48A7004E8984 /* Constants */,
 				49D2BBB618DE3C81008FFB9B /* Libraries */,
 				49D2BBB018DE39BD008FFB9B /* images */,
 				49D2BBAC18DE3880008FFB9B /* soccerPlannerClasses */,
@@ -183,8 +191,6 @@
 				49D2BBAE18DE38A3008FFB9B /* fieldViewController.m */,
 				49D2BBBB18DE3D7D008FFB9B /* menuViewController.h */,
 				49D2BBBC18DE3D7D008FFB9B /* menuViewController.m */,
-				49D2BBBE18DE3D8D008FFB9B /* startViewController.h */,
-				49D2BBBF18DE3D8D008FFB9B /* startViewController.m */,
 			);
 			name = viewControllers;
 			sourceTree = "<group>";
@@ -194,6 +200,10 @@
 			children = (
 				49D2BBB318DE3A0B008FFB9B /* soccerPlannerViewController.h */,
 				49D2BBB418DE3A0B008FFB9B /* soccerPlannerViewController.m */,
+				49D41E1318DF47F4004E8984 /* soccerPlayer.h */,
+				49D41E1418DF47F4004E8984 /* soccerPlayer.m */,
+				49D41E1A18DF48D4004E8984 /* soccerPlanner.h */,
+				49D41E1B18DF48D4004E8984 /* soccerPlanner.m */,
 			);
 			name = soccerPlannerClasses;
 			sourceTree = "<group>";
@@ -221,6 +231,22 @@
 				49D2BBB918DE3C92008FFB9B /* SWRevealViewController.m */,
 			);
 			path = SWRevealViewController;
+			sourceTree = "<group>";
+		};
+		49D41E1618DF48A7004E8984 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				49D41E1718DF48C5004E8984 /* Constants.h */,
+			);
+			name = Constants;
+			sourceTree = "<group>";
+		};
+		49D41E1D18DF49B9004E8984 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				49D41E1E18DF49CF004E8984 /* homePlayer.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -305,6 +331,7 @@
 				49D2BB8418DE380D008FFB9B /* InfoPlist.strings in Resources */,
 				49D2BB8C18DE380D008FFB9B /* Images.xcassets in Resources */,
 				49D2BBB218DE39D5008FFB9B /* backgroundField.jpg in Resources */,
+				49D41E1F18DF49CF004E8984 /* homePlayer.png in Resources */,
 				49D2BBAB18DE3878008FFB9B /* mainStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -328,8 +355,9 @@
 				49D2BBBD18DE3D7D008FFB9B /* menuViewController.m in Sources */,
 				49D2BB8618DE380D008FFB9B /* main.m in Sources */,
 				49D2BBBA18DE3C92008FFB9B /* SWRevealViewController.m in Sources */,
-				49D2BBC018DE3D8D008FFB9B /* startViewController.m in Sources */,
 				49D2BBB518DE3A0B008FFB9B /* soccerPlannerViewController.m in Sources */,
+				49D41E1518DF47F4004E8984 /* soccerPlayer.m in Sources */,
+				49D41E1C18DF48D4004E8984 /* soccerPlanner.m in Sources */,
 				49D2BBAF18DE38A3008FFB9B /* fieldViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -533,6 +561,7 @@
 				49D2BBA418DE380E008FFB9B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		49D2BBA518DE380E008FFB9B /* Build configuration list for PBXNativeTarget "soccerPlannerTests" */ = {
 			isa = XCConfigurationList;
@@ -541,6 +570,7 @@
 				49D2BBA718DE380E008FFB9B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

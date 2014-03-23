@@ -7,43 +7,43 @@
 //
 
 #import "fieldViewController.h"
-
 @interface fieldViewController ()
 
 @end
 
 @implementation fieldViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self addPlayerGesture];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+}
+#pragma mark add player methods
+-(void)addPlayerGesture {
+    UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(addPlayer:)];
+    [tapGesture setNumberOfTapsRequired:2];
+    [self.view addGestureRecognizer:tapGesture];
+}
+-(void)addPlayer:(id) sender {
+    CGPoint touchedPoint =[sender locationInView:self.view];
+    UIButton *player = [self.soccerPlanner createLocalPlayerWithPoint:touchedPoint];
+    [self addRemovePlayerGesture:player];
+    [self.view addSubview:player];
+}
+#pragma mark remove player methods
+-(void)addRemovePlayerGesture:(UIButton *)player {
+    UITapGestureRecognizer *doubleTapGesture = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(removePlayer:)];
+    [doubleTapGesture setNumberOfTapsRequired:2];
+    [player addGestureRecognizer:doubleTapGesture];
+}
+-(void)removePlayer:(UITapGestureRecognizer *)sender {
+    [self.soccerPlanner removeLocalPlayer:sender.view];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

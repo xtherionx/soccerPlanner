@@ -1,45 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="12F45" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="ccT-SU-aqL">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="12F45" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="Myj-kk-j2c">
     <dependencies>
         <deployment defaultVersion="1536" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--Start View Controller-->
-        <scene sceneID="m6w-09-oA0">
-            <objects>
-                <viewController id="ccT-SU-aqL" customClass="startViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="snk-Ga-NB7"/>
-                        <viewControllerLayoutGuide type="bottom" id="wQ6-4J-gcS"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="IyM-yM-2Sd">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9sc-ic-Yde">
-                                <rect key="frame" x="434" y="253" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <connections>
-                        <segue destination="gqa-VH-Db1" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSegue" id="bbW-mw-LDP"/>
-                        <segue destination="Myj-kk-j2c" kind="custom" identifier="sw_front" customClass="SWRevealViewControllerSegue" id="I0C-Sd-ohr"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ngp-a2-efF" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1514" y="-1048"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="wKi-T1-8UE">
             <objects>
-                <navigationController storyboardIdentifier="navController" definesPresentationContext="YES" id="Myj-kk-j2c" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="navController" definesPresentationContext="YES" navigationBarHidden="YES" id="Myj-kk-j2c" sceneMemberID="viewController">
+                    <nil key="simulatedTopBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZtY-1v-6Lk">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -67,7 +37,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Deh-h9-LX8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-350" y="-1512"/>
+            <point key="canvasLocation" x="-458" y="-1396"/>
         </scene>
         <!--Field View Controller-->
         <scene sceneID="enf-8g-3z8">
